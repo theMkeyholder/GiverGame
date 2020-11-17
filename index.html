@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Hello!</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+    <h1>Backstory</h1>
+    
+    <p>
+      Memories are an integral part of the Community. Jonas is tasked with having the integrity to not flee, and is exempt from some rules. However, why should Jonas continue to put up with the irrational assertion that Sameness is good for the community? Jonas robs the community of leftovers, which would have been a major transgression that he would have gotten an infraction for. Jonas faces the perils of escaping the community and must stay obscured from the security planes that gravitate toward him. Can he make it?    
+    </p>
+    <div id="food"></div>
+    <div id="space"></div>
+    <button onclick="advance()">Advance one space</button>
+    <div id="secplan" style="display:none">
+    Uh oh! Security planes showed up! 
+    <button onclick="snowmem()">Use the snow memory</button>
+    </div>
+    <div id="fish" style="display:none">
+      You can catch a fish!
+      <button onclick="fishInternal()">Catch a fish</button>
+    </div>
+    <div id="fText" style="display:block"></div>
+    <div id="chooseOne" style="display:none">
+      You can either:
+      <button onclick="burst()">Use a burst of energy</button>
+      <button onclick="fish()">
+        Get more food
+      </button>
+      The choice is yours!
+    </div>
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js" defer></script>
+  </body>
+</html>
